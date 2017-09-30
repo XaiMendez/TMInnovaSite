@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp" ng-controller="mainCtrl">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,14 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
           <![endif]-->
-      </head>
+
+    <!-- angular 1.6.4 -->
+    <script src="angular/libs/angular.min.js"></script>
+    <script src="angular/libs/angular-route.min.js"></script>
+
+    <script src="angular/app.js"></script>
+    
+    </head>
 
       <body id="top" class="has-header-search">
 
@@ -465,7 +472,7 @@ style="z-index: 5;">
         <div class="panel-body">
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane fade in active" id="tab-5">
-                <h2>¿Quiénes somos?</h2>
+                <h2>¿Quiénes somos?</h2>{{ test }}
 
                 <img class="alignright" src="assets/img/working_man.png" alt="">
 
